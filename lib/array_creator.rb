@@ -5,6 +5,8 @@ class ArrayCreator
     return sorted, unsorted
   end
 
+  private
+
   def shuffle array
     unsorted = array.shuffle
     unsorted = shuffle array if unsorted == array

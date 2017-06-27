@@ -6,9 +6,11 @@ describe ArrayCreator do
     sorted, _ = subject.generate(length: random_length)
     expect(sorted.length).to eq random_length
   end
+  
   it "returns an unsorted and sorted version of an array" do
     sorted, unsorted = subject.generate(length:2)
     expect(sorted).to eq unsorted.sort
     expect(sorted).not_to eq unsorted
   end
+
 end
