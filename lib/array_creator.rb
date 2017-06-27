@@ -1,6 +1,12 @@
+require_relative 'counting_array'
+
 class ArrayCreator
+  def initialize array_class: CountingArray
+    @array_class = array_class
+  end
+
   def generate length: 5
-    sorted = [*1..length]
+    sorted = @array_class.new [*1..length]
     unsorted = shuffle sorted
     return sorted, unsorted
   end
