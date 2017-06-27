@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+
+gem "rspec"
+gem "autotest"
+gem "rubocop"
+gem "autotest-standalone"
+gem "autotest-rsec"
