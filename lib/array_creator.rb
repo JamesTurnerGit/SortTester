@@ -8,8 +8,9 @@ class ArrayCreator
   private
 
   def shuffle array
-    unsorted = array.shuffle
-    unsorted = shuffle array if unsorted == array
-    unsorted
+    array.reverse
+    # unsorted = array.shuffle
+    # unsorted = shuffle array if unsorted == array
+    # unsorted
   end
 end
